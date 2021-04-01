@@ -1,0 +1,470 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto:wght@700&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    min-height: 100vh;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color:bisque;
+  }
+
+main {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 auto;
+            flex: 1 0 auto;
+  }
+
+/*-- Headings ---*/
+
+.topPicksHeading {
+    font-family: 'Playfair Display', serif;
+    color: #4b5f69;
+    font-size: 2.5rem;
+}
+
+.sharedByYouHeading {
+    font-family: 'Playfair Display', serif;
+    padding-top: 20px;
+    color: #4b5f69;
+    font-size: 2.5rem;
+}
+
+#subcontainer {
+    padding: 20px;
+}
+
+.mainHeading {
+    padding-top: 25px;
+    font-size: 3.5rem;
+    font-family: 'Playfair Display', serif;
+    color: #40525a;
+}
+
+h3 {
+    font-family: 'Playfair Display', serif;
+    color: #4b5f69;
+}
+
+.subheading {
+    padding-top: 10px;
+    font-size: 1.5rem;
+    font-family: 'Playfair Display', serif;
+    color: #4b5f69;
+}
+
+.homePageText {
+    font-size: 1rem;
+    padding-top: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.welcomeHeading {
+    padding-bottom: 40px;
+}
+
+.registerHeading {
+    padding-bottom: 40px;
+}
+
+.favouriteHeading {
+    padding-top: 50px;
+}
+
+/*-- NavBar --*/
+
+/* box shadow code from https://www.cssmatic.com/box-shadow */
+
+nav {
+    -webkit-box-shadow: -1px 3px 29px -9px rgba(0,0,0,0.75);
+    box-shadow: -1px 3px 29px -9px rgba(0,0,0,0.75);
+    z-index: 1;
+}
+
+nav .brand-logo {
+    font-family: 'Playfair Display', serif;
+}
+
+nav ul li a {
+    letter-spacing: 1px;
+}
+
+/*-- Cards for books on homepage ---*/
+
+#card {
+    padding-top: 50px;
+}
+
+/* box shadow code from https://www.cssmatic.com/box-shadow */
+.card {
+    height: 435px;
+    width: 225px;
+    position: relative;
+    margin: auto;
+    -webkit-box-shadow: -1px 3px 29px -9px rgba(0,0,0,0.75);
+    box-shadow: -1px 3px 29px -9px rgba(0,0,0,0.75);
+}
+
+.warning {
+    color: red;
+    font-size: 14px;
+}
+
+.card .card-content {
+    padding: 10px;
+    font-family: 'Playfair Display';
+    font-weight: 600;
+}
+
+.card .card-content .title-content {
+    padding: 10px;
+    height: 50px;
+}
+
+.tab {
+    overflow-x: visible; 
+    overflow-y: visible;
+}
+
+.tabs .indicator {
+    background-color: #1a237e40;
+}
+
+.card-tabs .tabs .tab a {
+    padding: 0;
+    color: #4b5f69;
+}
+
+.tabs .tab a:hover, 
+.tabs .tab a.active {
+    color: #4b5f69;
+}
+
+.tabs .tab a:focus, 
+.tabs .tab a:focus.active,
+.tabs .tab a:hover, .tabs .tab a.active {
+    background-color: #b9bddc40;
+}
+
+.card .card-content .tab-content {
+    height: 100px;
+}
+
+.card .card-content {
+    height: 80px;
+    margin: 0 auto;
+}
+
+.card-image img {
+    height: 300px;
+}           
+
+.card-title {
+    line-height: 15px;
+}
+
+/*--Buttons--*/ 
+  
+
+.buttons {
+    padding-top: 10px;
+}
+
+#gilded{
+    margin-left:20px;
+  
+}
+
+#pansy{
+    float: right; 
+    padding-left:10px;
+    margin-right:20px;
+}
+
+#strawberries{
+  margin-left:20px; 
+  margin-top:20px;
+}
+
+#leaf{
+    float: right; 
+    margin-top:20px;
+    padding-left:10px;
+    margin-right:20px;
+
+}
+
+.season{
+    color:#fff;
+    font-size: 20px;
+    font-family: Roboto;
+    text-align: center;
+}
+
+.overlay-image .text{
+    color:#fff;
+    font-size: 30px;
+    line-height: 1.5em;
+    text-shadow: 2px 2px 2px #000;
+    text-align:center;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    width:100%;
+}
+
+/* --- Footer ---*/
+
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+#content-wrap {
+    padding-bottom: 320px;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+}
+
+.page-footer {
+    background-color:#1a237e14;
+}
+
+footer .icon {
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+}
+
+footer li a {
+    cursor: pointer;
+    padding: 5px;
+    font-size: 1.5rem;
+    color: #fff;
+    font-weight: 600;
+}
+
+.footerHeading {
+    color: #4b5f69;
+}
+
+footer li {
+    display: inline-block;
+    
+}
+
+/* Over riding custom styles in the input fields in all forms */
+
+input[type=password]:not(.browser-default),
+input[type=text]:not(.browser-default),
+.input-field .prefix ~ input,
+.input-field .prefix ~ textarea {
+    border-bottom: 1px solid #c6c8ca;
+}
+
+.input-field .prefix {
+    color: #fff;
+}
+
+.input-field > label {
+    color: #4b5f69
+} 
+
+.input-field > label .active {
+    color: #4b5f69
+}
+
+/* Once clicked on... */
+
+#added_by input:-internal-autofill-selected {
+    background-color: transparent!important;
+    color: transparent!important;
+}
+
+/* Icons */
+
+.input-field .prefix.active {
+    color: #2503e038;
+}
+
+.input-field .material-icons .prefix .active {
+    border-bottom: 1px solid #2503e038;
+}
+
+
+.arrowIcon {
+    font-size: 3rem;
+    color: #1a237e40;
+}
+
+/*labels*/
+
+textarea.materialize-textarea:focus:not([readonly])+label,
+input[type=password]:not(.browser-default):focus:not([readonly])+label,
+input[type=text]:not(.browser-default):focus:not([readonly])+label,
+input[type=tel]:not(.browser-default):focus:not([readonly])+label {
+    color: #4b5f69;
+}
+
+/* Underlines */
+
+input[type=text]:not(.browser-default):focus:not([readonly]),
+input[type=password]:not(.browser-default):focus:not([readonly]),
+input[type=tel]:not(.browser-default):focus:not([readonly]),
+textarea.materialize-textarea:focus:not([readonly]) {
+    border-bottom: 1px solid #2503e038;
+    box-shadow: none;
+}
+
+.switch label input[type=checkbox]:checked+.lever:after,
+.switch label input[type=checkbox]:checked+.lever {
+    background-color: #4231a2db;
+}
+
+/* Rating range selector */
+
+input[type=range] {
+    width: 50%;
+    border: none;
+    margin-left: 100px;
+}
+
+input[type=range]+.thumb.active,
+input[type=range]+.thumb {
+    background-color: #4231a2db;
+    margin-left: 93px!important;
+}
+
+/* CSS to colour dot on the range selector fom materialize */
+
+  input[type=range]::-webkit-slider-thumb {
+    background-color: #4231a2db;
+  }
+  input[type=range]::-moz-range-thumb {
+    background-color: #4231a2db;
+  }
+  input[type=range]::-ms-thumb {
+    background-color: #4231a2db;
+  }
+
+
+/* CSS to change the autofill background colour from https://stackoverflow.com/questions/2781549/removing-input-background-colour-for-chrome-autocomplete */
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active  {
+    -webkit-box-shadow: 0 0 0 30px #80a1bbb8 inset !important;
+}
+
+/*--- Carousel ---*/
+
+.carousel {
+    position: relative;
+    margin-left: 0;
+    margin-bottom: 4%;
+    height: 300px;
+}
+
+.carousel .carousel-item {
+    width: 100px;
+    height: 150px;
+    left: auto;
+}
+
+.topPicksCarousel {
+   margin: 0;
+   width: 80%;
+}
+
+
+/* --- Flexbox code taken from https://stackoverflow.com/questions/50671682/center-align-items-in-materializecss-row to center card columns --- */
+
+
+.flexbox { 
+     display: -webkit-box; 
+     display: -ms-flexbox; 
+     display: flex; 
+     -ms-flex-wrap: wrap; 
+         flex-wrap: wrap;
+     -webkit-box-pack: center;
+         -ms-flex-pack: center;
+             justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+/*-- Block Dividers -- */
+
+.block-divider {
+    width: 70%;
+    height: 1px;
+    color: #4b5f69;
+    background-color: #4b5f69;
+    border-style: none;
+    margin-top: 25px;
+}
+
+.block-dividerHome {
+    width: 30%;
+    height: 1px;
+    color: #4b5f69;
+    background-color: #4b5f69;
+    border-style: none;
+    margin-top: 25px;
+}
+
+/*-- Media Queries -- */
+
+
+@media (min-width:768px) {
+    .topPicks {
+        padding-left: 50px;
+    }
+}
+
+@media (min-width: 1024px) {
+        .carousel .carousel-item {
+        width: 150px;
+        height: 175px;
+    }
+} 
+
+@media (min-width: 1020px) {
+    .carousel {
+        padding-left: 150px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .subheading {
+        font-size: 2.5rem;
+    }
+}
+
+@media (min-width: 1440px) {
+    .homePageText {
+        font-size: 1.2rem;
+    }
+}
+
+@media (min-width: 2560px) {
+    .carousel {
+        margin-bottom: 2%;
+    }
+}
