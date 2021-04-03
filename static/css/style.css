@@ -13,7 +13,7 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    background-color:bisque;
+    background-color:purple;
   }
 
 main {
@@ -185,7 +185,6 @@ nav ul li a {
 
 #pansy{
     float: right; 
-    padding-left:10px;
     margin-right:20px;
     margin-left: 20px;
 }
@@ -198,16 +197,23 @@ nav ul li a {
 #leaf{
     float: right; 
     margin-top:20px;
-    padding-left:10px;
+    margin-left:20px;
     margin-right:20px;
 
 }
 
 .season{
     color:#fff;
-    font-size: 80px;
+    font-size: 60px;
     font-family: Roboto;
     text-align: center;
+}
+
+.photo{
+    text-align:center;
+    z-index: 4;
+    font-style: Roboto;
+    font-size: 60px;
 }
 
 .overlay-image .text{
