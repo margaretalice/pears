@@ -1,20 +1,12 @@
-{% extends 'base.html' %} {% block content %}
+{% extends 'base.html' %}
+{% block content %}
 
 <div class="container-fluid">
-<div class="row" id="intropic">
-
-<img src="https://www.thebalancecareers.com/thmb/WWiegaOXFEWN1VKsDUYiE9scvsI=/400x250/filters:no_upscale():max_bytes(150000):strip_icc()/recipe-notes-cookbook-56a79db75f9b58b7d0ec23bd.jpg">
-</div>
-</div>
-<div class="container-fluid">h
-	<div class="row valign-wrapper" id="intro">
+	<div class="row valign-wrapper">
 		<div class="col s12 valign">
-			<h2 class="mainHeading center">Welcome to My English Kitchen!</h2>
-			<p class="homePageText center">
-            'My English Kitchen' was founded in early 2020 to celebrate and record English seasonal recipes. In this online cookery book, you'll find Easter rabbit biscuits, learn how to crystallise flowers, celebrate winter with a slice or two of a stunning chocolate and gold cake, or make your own maple and pecan leaves.</p>
-<p class="homePageText center">But we want you also to add, and edit your own recipes, perhaps your grandmother's pumpkin soup with sage butter, or that glorious 'Devil's Food cake' you discovered on a trip to the Lake District.</p>
-<p class="homePageText center">It's up to you, but, above all, have fun!</p> 
-			
+			<h2 class="mainHeading center">Welcome to I‑Brary!</h2>
+			<p class="homePageText center">A site designed for avid readers to share and store your favourite books!
+			</p>
 		</div>
 	</div>
 </div>
@@ -25,58 +17,53 @@
 	<div class="row center">
 		<div class="col s12 m6" id="subcontainer">
 			<h4 class="subheading">Already a member?</h4>
-			<p class="homePageText">Add a cherished family recipe, or one that you have discovered, and let other lovers of tasty treats know about it and share their thoughts.
+			<p class="homePageText">Add a book you have read, or are currently reading, and let our community know what
 				you thoughts.</p>
 		</div>
-		<div class="col s12 m6" id="register">
+		<div class="col s12 m6" id="subcontainer">
 			<h4 class="subheading">Not a member? Register today!</h4>
-			<p class="homePageText">Become part of our Cookbook club today... read and write reviews, find new recipes to experiment with
+			<p class="homePageText">Become part of our community today... read and write reviews, find new books to read
 				and share your own. </p>
 		</div>
 	</div>
 </div>
 
+<hr class="block-divider">
+
+
 <div class="container-fluid flexbox valign-wrapper">
 	<div class="row flexbox topPicksCarousel">
 		<div class="col s12 m5 valign topPicks">
-			<h3 class="topPicksHeading center">Our Top Recipes of the Week</h3>
+			<h3 class="topPicksHeading center">Top Picks of the Week</h3>
 			<p class="homePageText carouselText center">Every week we pick the top picks of your uploads and put them
 				center stage!</p>
 		</div>
 		<div class="col s12 m7 valign carousel">
 			<a class="carousel-item" href="#one!">
-				<img src="{{url_for('static', filename='images/pumpkin.jpg')}}" alt="Image of a book">
+			<img src="https://i.dailymail.co.uk/i/pix/2013/12/05/article-0-19DC732400000578-541_634x647.jpg" alt="Image of a book">
                 </a>
 				<a class="carousel-item" href="#two!">
-					<img src="{{url_for('static', filename='images/book2.jpg')}}" alt="Image of a book">
+					<img src="https://secure.i.telegraph.co.uk/multimedia/archive/01598/p_pansy-wreath-cak_1598513c.jpg" alt="Image of a book">
                 </a>
 					<a class="carousel-item" href="#three!">
-						<img src="{{url_for('static', filename='images/almondapricot.jpg')}}" alt="Image of a book">
+						<img src="{{url_for('static', filename='images/book3.jpg')}}" alt="Image of a book">
                 </a>
 						<a class="carousel-item" href="#four!">
-							<img src="{{url_for('static', filename='images/crumble.jpg')}}" alt="Image of a book">
+							<img src="{{url_for('static', filename='images/book5.jpg')}}" alt="Image of a book">
                 </a>
 							<a class="carousel-item" href="#five!">
-								<img src="{{url_for('static', filename='images/pumpkinjpg')}}" alt="Image of a book">
+								<img src="{{url_for('static', filename='images/book6.jpg')}}" alt="Image of a book">
                 </a>
 		</div>
 	</div>
 </div>
 
-<div class="container">
-		<div class="row center">
-			<div class="col s12">
-				<h3 class="center favouriteHeading">Want to share your own favourite books?</h3>
-				<p class="homePageText">Create an account in seconds and upload your own books. Build your own repotoire
-					in your very own 'My Books' view,
-					or choose 'Share', and your book upload will appear on the homepage!</p>
-			</div>
-		</div>
+
+<hr class="block-divider">
+
 <div class="container">
 	<h2 class="sharedByYouHeading center">Shared By You..</h2>
 	<div class="row">
-		
-		
 		{% for book in books %}
 		<div id="card" class="col s12 m4 xl3 center flexbox">
 			<div class="card hoverable center-block grey lighten-4">
@@ -85,7 +72,7 @@
                     </div>
 					<!-- <div class="card-content title-content">
 						<span class="card-title grey-text text-darken-4">{{book.book_name}}</span>
-					</div> --
+					</div> -->
 					<div class="card-tabs">
 						<ul class="tabs">
 							<li class="tab col s4"><a class="active" href="#test4{{loop.index}}">Author</a></li>
@@ -102,8 +89,48 @@
 				</div>
 			</div>
 			{% endfor %}
+		</div>
+    </div>
+    <div class="overlay-image">
+        <div class="card">
+            <h2 class="col s12 center-align text-dark grey">Winter</h2>
+            <img src="https://i.dailymail.co.uk/i/pix/2013/12/05/article-0-19DC732400000578-541_634x647.jpg" alt="picture of gingerbread men" width="400px" height="350px" id="gilded">
+             <p>Click here to view more. <a href="#">Winter Recipes.</a></p>
+        </div>
 
-            <div class="container-fluid">
+             <div class="card"> 
+                 <h2 class="season col s12 center-align text-dark grey">Spring</h2>
+                             <img src="https://secure.i.telegraph.co.uk/multimedia/archive/01598/p_pansy-wreath-cak_1598513c.jpg" alt="picture of cake with pansies" width="400px" height="350px" float="right" id="pansy">
+                                <p>Click here to view more. <a href="#">Spring Recipes.</a></p>
+                         </div>
+
+                 <div class="card"> 
+                 <h2 class="season col s12 center-align text-dark grey">Summer</h2>
+                 <img src="https://www.cookingclassy.com/wp-content/uploads/2015/05/fresh-strawberry-cake4-srgb..jpg" alt="picture of cake with strawberries" width="400px" height="350px" id="strawberries">
+                <p>Click here to view more. <a href="#">Summer Recipes.</a></p>
+                 </div>
+           
+                <div>
+                <h2 class="season col s12 center-align text-dark grey">Autumn</h2>
+                <img src="https://i.pinimg.com/originals/33/41/77/33417749d9bcc04efaaa3da6d53c29a2.jpg" alt="picture of autumn leaf cake" width="400px" height="350px" float="right" id="leaf">
+            <p>Click here to view more. <a href="#">Autumn Recipes.</a></p>
+                </div>
+           
+            </div>
+   
+
+	<div class="container"
+		<div class="row center">
+			<div class="col s12">
+				<h3 class="center favouriteHeading">Want to share your own favourite books?</h3>
+				<p class="homePageText">Create an account in seconds and upload your own books. Build your own repotoire
+					in your very own 'My Books' view,
+					or choose 'Share', and your book upload will appear on the homepage!</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="container-fluid">
 		<div class="row">
 			<div class="col s12 center toTopbtn">
 				<a href="#"><i class="arrowIcon fas fa-angle-up"></i></a>
@@ -111,11 +138,5 @@
 		</div>
 	</div>
 
-            
 
-
-
-
- 
-     
-{% endblock %}
+	{% endblock %}
