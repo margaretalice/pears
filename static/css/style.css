@@ -13,7 +13,7 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    background-color:purple;
+    background-color:#f9e5bc;
   }
 
 main {
@@ -87,6 +87,7 @@ nav {
     -webkit-box-shadow: -1px 3px 29px -9px rgba(0,0,0,0.75);
     box-shadow: -1px 3px 29px -9px rgba(0,0,0,0.75);
     z-index: 1;
+    color: pink;
 }
 
 nav .brand-logo {
@@ -178,56 +179,30 @@ nav ul li a {
     padding-top: 10px;
 }
 
-#gilded{
-    margin-left:20px;
-  
+
+
+
+.column{
+    float:left;
+    width:50%;
+    padding:5%;
 }
 
-#pansy{
-    float: right; 
-    margin-right:20px;
-    margin-left: 20px;
+.row: :after{
+    content:"";
+    clear:both;
+    display:table;
 }
-
-#strawberries{
-  margin-left:20px; 
-  margin-top:20px;
-}
-
-#leaf{
-    float: right; 
-    margin-top:20px;
-    margin-left:20px;
-    margin-right:20px;
-
-}
-
 .season{
-    color:#fff;
-    font-size: 60px;
+    color:rgb(124, 122, 122);
+    font-size: 40px;
     font-family: Roboto;
     text-align: center;
 }
 
-.photo{
-    text-align:center;
-    z-index: 4;
-    font-style: Roboto;
-    font-size: 60px;
-}
 
-.overlay-image .text{
-    color:#fff;
-    font-size: 30px;
-    line-height: 1.5em;
-    text-shadow: 2px 2px 2px #000;
-    text-align:center;
-    position: absolute;
-    top:50%;
-    left:50%;
-    transform:translate(-50%, -50%);
-    width:100%;
-}
+
+
 
 /* --- Footer ---*/
 
