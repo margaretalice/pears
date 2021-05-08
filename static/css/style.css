@@ -13,13 +13,21 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    background-color:#f9e5bc;
+    background-color:cornsilk;
   }
 
 main {
     -webkit-box-flex: 1;
         -ms-flex: 1 0 auto;
             flex: 1 0 auto;
+  }
+  #pic{
+      justify-content:center;
+  }
+
+  #intropic{
+      text-align: center;
+      margin-top: 20px;
   }
 
 /*-- Headings ---*/
@@ -186,6 +194,8 @@ nav ul li a {
     float:left;
     width:50%;
     padding:5%;
+  
+  
 }
 
 .row: :after{
@@ -194,14 +204,29 @@ nav ul li a {
     display:table;
 }
 .season{
-    color:rgb(124, 122, 122);
+    color:rgb(124, 122, 122);  
     font-size: 40px;
     font-family: Roboto;
     text-align: center;
 }
 
+.info{
+    font-size: 15px;
+    font-family: Roboto;
+    color:#000;
+  
+}
+#white{
+    text-align:center;
+    background-color: rgba(45,45,45,0.1);
+    color: #4b5f69;
+    padding:10px;
+    font-weight: 400;
+}
 
-
+#leaf{
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
 
 
 /* --- Footer ---*/

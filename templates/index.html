@@ -2,15 +2,20 @@
 {% block content %}
 
 <div class="container-fluid">
-	<div class="row valign-wrapper">
-		<div class="col s12 valign">
-			<h2 class="mainHeading center">Welcome to I‑Brary!</h2>
-			<p class="homePageText center">A site designed for avid readers to share and store your favourite books!
-			</p>
-		</div>
-	</div>
-</div>
+<div class="row" id="intropic">
 
+<img src="https://www.thebalancecareers.com/thmb/WWiegaOXFEWN1VKsDUYiE9scvsI=/400x250/filters:no_upscale():max_bytes(150000):strip_icc()/recipe-notes-cookbook-56a79db75f9b58b7d0ec23bd.jpg" class="center" id="pos" alt="picture of recipe notebook">
+</div>
+</div>
+<div class="container-fluid">
+	<div class="row valign-wrapper" id="intro">
+		<div class="col s12 valign">
+			<h2 class="mainHeading center">Welcome to My English Kitchen!</h2>
+			<p class="homePageText center">
+            'My English Kitchen' was founded in early 2020 to celebrate and record English seasonal recipes. In this online cookery book, you'll find Easter rabbit biscuits, learn how to crystallise flowers, celebrate winter with a slice or two of a stunning chocolate and gold cake, or make your own maple and pecan leaves.</p>
+<p class="homePageText center">But we want you also to add, and edit your own recipes, perhaps your grandmother's pumpkin soup with sage butter, or that glorious 'Devil's Food cake' you discovered on a trip to the Lake District.</p>
+<p class="homePageText center">It's up to you, but, above all, have fun!</p> 
+			
 <hr class="block-dividerHome">
 
 <div class="container-fluid">
@@ -70,7 +75,7 @@
 				<div class="card-image">
 					<img src= "{{book.img_url}}" alt="Image of a book">
                     </div>
-					<!-- <div class="card-content title-content">
+                 <!-- <div class="card-content title-content">
 						<span class="card-title grey-text text-darken-4">{{book.book_name}}</span>
 					</div> -->
 					<div class="card-tabs">
@@ -92,26 +97,27 @@
 		</div>
     </div>
     <div class="container">
-        <div class="column">
+        <div class="column" id="pic">
             
             <img src="https://i.dailymail.co.uk/i/pix/2013/12/05/article-0-19DC732400000578-541_634x647.jpg" alt="picture of gingerbread men" width="400px" height="350px" id="gilded">
-            <p>Click here to view more. <a href="#">Winter Recipes.</a></p>
+            <p class="info">Click here to view more. <a href="#">Winter Recipes.</a></p>
         </div>
         <div class="column">
             <img src="https://secure.i.telegraph.co.uk/multimedia/archive/01598/p_pansy-wreath-cak_1598513c.jpg" alt="picture of cake with pansies" width="400px" height="350px" float="right" id="pansy">
-            <p>Click here to view more. <a href="#">Spring Recipes.</a></p>
+            <p class="info">Click here to view more. <a href="#">Spring Recipes.</a></p>
         </div>
           <div class="column">
             <img src="https://www.cookingclassy.com/wp-content/uploads/2015/05/fresh-strawberry-cake4-srgb..jpg" alt="picture of cake with strawberries" width="400px" height="350px" id="strawberries">
 
-            <p>Click here to view more. <a href="#">Summer Recipes.</a></p>
+            <p class="info">Click here to view more. <a href="#">Summer Recipes.</a></p>
           </div>
           <div class="column">
-            <img src="https://i.pinimg.com/originals/33/41/77/33417749d9bcc04efaaa3da6d53c29a2.jpg" alt="picture of autumn leaf cake" width="400px" height="350px" float="right" id="leaf">
-            <p>Click here to view more. <a href="#">Autumn Recipes.</a></p>
+            <img src="https://i.pinimg.com/originals/33/41/77/33417749d9bcc04efaaa3da6d53c29a2.jpg" alt="picture of autumn leaf cake" text="Autumn" width="400px" height="350px" float="right" id="leaf">
+           <p class="info">Click here to view more. <a href= "{{url_for('autumn')}}"> Autumn Recipes. </a></p>
             </div>
               
            </div>
+      
    
 
 	<div class="container"

@@ -6,8 +6,8 @@ import bcrypt
 
 app = Flask(__name__)
 
-app.config["MONGO_DBNAME"] = 'i_brary'
-app.config['MONGO_URI'] = 'mongodb://sw1ckham:1hamcvcw123@myfirstcluster-shard-00-00-iff8d.mongodb.net:27017,myfirstcluster-shard-00-01-iff8d.mongodb.net:27017,myfirstcluster-shard-00-02-iff8d.mongodb.net:27017/i_brary?ssl=true&replicaSet=myFirstCluster-shard-0&authSource=admin&retryWrites=true&w=majority'
+app.config["MONGO_DBNAME"] = 'gilded_gingerbread'
+app.config['MONGO_URI'] = 'mongodb+srv://Lucie:purplecambridge58@myfirstcluster.yzvdc.mongodb.net/gilded_gingerbread?retryWrites=true&w=majority'
 
 mongo = PyMongo(app)
 
@@ -115,6 +115,13 @@ def delete_book(book_id):
 def logout():
     session.clear()
     return redirect(url_for('index'))
+
+
+
+@app.route('/autumn') 
+def autumn():
+    return render_template('autumn.html')
+
 
 if __name__ == '__main__':
     app.secret_key = 'mysecret'
