@@ -222,10 +222,21 @@ nav ul li a {
     color: #4b5f69;
     padding:10px;
     font-weight: 400;
+    font-size: large;
+    font-family: Roboto;
+    text-decoration: underline;
+    margin-top: 50px;
 }
 
 #leaf{
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+#tea{
+   
+    text-align: justify;
+    line-height: 1.6;
+    font-family: Roboto;
 }
 
 
