@@ -219,10 +219,10 @@ nav ul li a {
 #white{
     text-align:center;
     background-color: rgba(45,45,45,0.1);
-    color: #4b5f69;
-    padding:10px;
-    font-weight: 400;
-    font-size: large;
+    color:#000;
+    padding:20px;
+    font-weight: 600;
+    font-size: 2.5em;
     font-family: Roboto;
     text-decoration: underline;
     margin-top: 50px;
@@ -237,6 +237,9 @@ nav ul li a {
     text-align: justify;
     line-height: 1.6;
     font-family: Roboto;
+    color:#000;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 
